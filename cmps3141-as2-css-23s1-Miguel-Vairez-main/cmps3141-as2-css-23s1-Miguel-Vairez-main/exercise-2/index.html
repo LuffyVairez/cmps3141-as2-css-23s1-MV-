@@ -1,0 +1,121 @@
+<!--CMPS3141-HCI - AS2-22S1
+Collaborators: Miguel Vairez
+Date: 9/8/23
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://get.mavo.io/mavo.css" />
+		<script src="https://get.mavo.io/mavo.js"></script>
+		<title>Exercise 2</title>
+	</head>
+	<div >
+		
+
+	<body mv-app>
+		<a class="top" href="../exercise-1/exercise1.html">Exercise 1</a><!-- change-->	</nav>
+		
+		<h1><b> <center> Here's a live picture filter editor. ENJOY!!!!!
+		</center></b></h1>
+		
+		
+				<img src="../logo.jpeg" style="filter:grayscale([grayscale]%) sepia([sepia]%) blur( [blur]px) brightness([brightness]%)
+				 contrast([contrast]%) hue-rotate([huerotate]deg)  saturate([saturate]%)   opacity([opacity]%) invert([invert]%)
+				">
+		
+				
+		
+		
+		<div class="navblock">
+			<div class="navblock_text">
+				
+				
+		
+		<div mv-bar="none" mv-storage="local">
+		  <div class="sliders">			 
+		  <legend class="titles"> <h2><center> Filter CSS Generator </h2></center></legend>
+		<div class="left">
+				<p> These set of slide adjusted the clearness</p>
+			  <p>
+				<label for="blur">Blur</label>
+				<input type="range" min="0" max="50" property="blur" value="0">
+				[blur]px
+			  </p>
+			
+				
+			  
+			  <p>
+				<label for="brightness">Brightness</label>
+				<input type="range" min="0" max="100"property="brightness" value="100">
+				[brightness]%
+			  </p>
+			  <p>
+				<label for="opacity">Opacity</label>
+				<input type="range" property="opacity" min="0" max="100" value="100">
+				[opacity]%
+			  </p>
+			  <form>
+				<button type="button" id="reloadButton"><center>Reset image</center></button>
+			</form>
+			</div>
+			<div class="right">
+			  <p> These set of slide adjusted the coloring of the image</p>
+			  <p>
+				<label for="contrast">Contrast</label>
+				<input type="range" min="0" max="1000" property="contrast" value="100">
+				[contrast]%
+			  </p>
+			  <p>
+				<label for="grayscale">Greyscale</label>
+				<input type="range" property="grayscale" min="0" max="100" value="0">
+				[grayscale]%
+			  </p>
+
+			
+			  
+			  <p>
+				<label for="huerotate">Hue Rotate</label>
+				<input type="range" property="huerotate" min="0" max="400" value="0">
+				[huerotate]°
+			  </p>
+			  <p>
+				<label for="invert">Invert</label>
+				<input type="range" property="invert" min="0" max="100" value="0">
+				[invert]%
+			  </p>
+			  
+			 			  
+			  <p>
+				<label for="saturate">Saturation</label>
+				<input type="range" property="saturate" min="0" max="400" value="100">
+				[saturate]%
+			  </p>
+			  <p>
+				<label for="sepia">Sepia</label>
+				<input type="range" property="sepia" min="0" max="100" value="0">
+				[sepia]%
+			  </p>
+						  
+			</div>
+		</div>
+		
+
+	</div>
+	</div>	
+	
+
+    <!-- JavaScript to handle the button click -->
+    <script>
+        // Get a reference to the reload button
+        const reloadButton = document.getElementById('reloadButton');
+
+        // Add a click event listener to the button
+        reloadButton.addEventListener('click', () => {
+            // Reload the current page
+            location.reload();
+        });
+    </script>		
+	</body>
+</html>

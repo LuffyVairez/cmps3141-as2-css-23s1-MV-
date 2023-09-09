@@ -1,0 +1,44 @@
+
+  /*CMPS3141-HCI - AS2-22S1
+Collaborators: Miguel Vairez
+Date:  9/8/23
+*/
+.left{
+  margin: -299px;;
+}
+body{
+  
+  background-color:#ADD8E6;
+
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+  div{
+   
+ 
+  
+  margin: 0 auto;
+
+  font-weight: 200p;
+  
+  width: 900px;
+}
+  a:link {
+    color: #007bff; /* Default link color (blue in this example) */
+    text-decoration: none; /* Remove underlines */
+  }
+  
+  /* Define styles for visited links */
+  a:visited {
+    color: purple; /* Visited link color (purple in this example) */
+  }
+  
+  /* Define hover styles (color change on hover) */
+  a:hover {
+    color: #ff6347; /* Hovered link color (red-orange in this example) */
+  }
+  
+  /* Define active styles (when the link is clicked) */
+  a:active {
+    color: #008000; /* Active link color (green in this example) */
+  }
